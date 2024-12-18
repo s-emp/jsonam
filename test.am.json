@@ -1,0 +1,23 @@
+{
+  "title": "Recipe",
+  "description": "Schema for a cooking recipe",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the recipe"
+    },
+    "ingredients": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "cookingTime": {
+      "type": "integer",
+      "description": "Cooking time in minutes",
+      "minimum": 1
+    }
+  },
+  "required": ["name", "ingredients"]
+}
